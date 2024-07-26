@@ -23,6 +23,9 @@ teclasNum.map((el)=>{
                 display.innerHTML += evt.target.innerHTML
             }
         } else {
+            if(["-","+","*","/"].includes(display.innerHTML[display.innerHTML.length-1])){
+                decimal = false
+            }
             display.innerHTML += evt.target.innerHTML
             sinal = false
         }
