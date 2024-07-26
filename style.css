@@ -13,9 +13,9 @@
     flex-flow: column wrap;
     background-color: #eee;
     border: 3px solid #bbb;
-    width: 240px;
+    width: 250px;
     border-radius: 5px;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.392);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.59);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -26,13 +26,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 230px;
+    width: 250px;
 }
 .div_teclas {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 230px;
+    width: 250px;
     flex-flow: wrap;
 }
 .tecla {
@@ -43,8 +43,8 @@
     border: 3px solid #888;
     border-radius: 50%;
     font-weight: bold;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     cursor: pointer;
     margin: 3px;
 }
@@ -57,13 +57,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 230px;
+    width: 240px;
 }
 .display {
-    width: 230px;
+    width: 250px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
     background-color: #8a8;
     text-align: right;
     padding: 5px;
     font-family: monospace;
-    font-size: larger;
+    font-size: 1.5em;
 }

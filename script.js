@@ -2,7 +2,7 @@ const teclasNum = [...document.querySelectorAll(".num")]
 const teclasOp = [...document.querySelectorAll(".op")]
 const teclaRes = document.querySelector("#res")
 const display = document.querySelector(".display")
-const ton = document.querySelector("#ton")
+const tcopy = document.querySelector("#tcopy")
 const tlimpar = document.querySelector("#tlimpar")
 const tigual = document.querySelector("#tigual")
 let sinal = false
@@ -13,7 +13,7 @@ teclasNum.map((el)=>{
         if(display.innerHTML == "0"){
             display.innerHTML = ""
         }
-        if (evt.target.innerHTML == ","){
+        if (evt.target.innerHTML == "."){
             if (display.innerHTML == ""){
                 display.innerHTML = "0"
             }
@@ -59,4 +59,8 @@ tigual.addEventListener("click",(evt)=>{
     decimal = false
     const res = eval(display.innerHTML)
     display.innerHTML = res
+})
+
+tcopy.addEventListener("click",(evt)=>{
+    navigator.clipboard.writeText(display.innerHTML)
 })
